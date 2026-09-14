@@ -16,8 +16,8 @@ Your actual product code lives in private repositories and is never exposed here
 
 Use the issue templates to file a bug or request a feature:
 
-- **[🐛 Bug Report](https://github.com/krafterlabs/community/issues)** — something is broken
-- **[💡 Feature Request](https://github.com/krafterlabs/community/issues)** — suggest an improvement
+- **[🐛 Bug Report](https://github.com/krafterlabs/community/issues/new?template=bug_report.yml)** — something is broken
+- **[💡 Feature Request](hhttps://github.com/krafterlabs/community/issues/new?template=feature_request.yml)** — suggest an improvement
 
 When filing an issue, **select your product name** from the dropdown. This helps us route your feedback to the right team.
 
