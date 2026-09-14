@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # This repository contains no package dependencies, only workflows and documentation.
+  # Dependabot is disabled.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    allow:
+      - dependency-type: "all"

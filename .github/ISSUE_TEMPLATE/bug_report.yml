@@ -1,0 +1,91 @@
+name: "🐛 Bug Report"
+description: File a verified technical bug report
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue. Please provide exact environmental characteristics so we can safely isolate the regression.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: "Product"
+      description: "Which product does this bug affect?"
+      options:
+        - freehold
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment / OS Version"
+      placeholder: "e.g., macOS Sequoia 15.1, Windows 11, Ubuntu 22.04"
+      description: "Operating system and version where you encountered this bug"
+    validations:
+      required: true
+
+  - type: input
+    id: product_version
+    attributes:
+      label: "Product Version"
+      placeholder: "e.g., v1.2.3"
+      description: "Version of the product you are using"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Provide an ordered, step-by-step description of how to trigger the bug"
+      placeholder: |
+        1. Open the product
+        2. Navigate to X feature
+        3. Click button Y
+        4. Observe unexpected behavior Z
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "What should happen instead?"
+      placeholder: "The application should..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happens?"
+      placeholder: "Instead, the application..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs or Error Messages"
+      description: "Paste any relevant error messages, stack traces, or log output"
+      render: bash
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: "Any other information that might help us debug this issue (screenshots, configuration, etc.)"
+
+  - type: checkboxes
+    id: validation
+    attributes:
+      label: "Validation"
+      options:
+        - label: "I have verified this bug occurs on the latest version of the product"
+          required: true
+        - label: "I have searched existing issues and this is not a duplicate"
+          required: true

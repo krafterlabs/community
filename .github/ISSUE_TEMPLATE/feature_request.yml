@@ -1,0 +1,78 @@
+name: "💡 Feature Request"
+description: "Propose an enhancement or new capability"
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a feature. Please provide a clear description of what you'd like to see added.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: "Product"
+      description: "Which product should have this feature?"
+      options:
+        - freehold
+        - product-2
+        - product-3
+        - product-4
+        - product-5
+        - product-6
+        - product-7
+        - product-8
+        - product-9
+        - product-10
+        - product-11
+        - product-12
+        - product-13
+        - product-14
+        - product-15
+        - product-16
+        - product-17
+        - product-18
+        - product-19
+        - product-20
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: "Problem Statement"
+      description: "What user friction or limitation does this address?"
+      placeholder: "Users currently struggle with... because..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: "Proposed Solution"
+      description: "How would you like this feature to work?"
+      placeholder: "The feature should allow users to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternative Approaches"
+      description: "What other ways could this problem be solved?"
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: "Use Case / Example"
+      description: "Provide a concrete example of how this feature would be used"
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: "Priority"
+      description: "How important is this feature to you?"
+      options:
+        - label: "This would significantly improve my workflow"
+        - label: "This is a nice-to-have enhancement"
+        - label: "This is a blocker for me"
